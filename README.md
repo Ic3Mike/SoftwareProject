@@ -2,7 +2,7 @@
 # Project Title:  *Camp AL*
 
 # Team Members: #
-Majk Bllako - Team Leader
+Majk Bllako
 <br>
 Fabio Allmeta 
 
@@ -22,3 +22,14 @@ When it comes to the solution, the site must include creating, editing and remov
 
 # Development Model: #
 For the way of developing our model, we choose the Waterfall Model, since the approach we will have in the project will be done one step at a time. The customers needs are very clear so there won't be any changes in the future and the design can be made easily this way. We will work with the prototype step by step starting with the Front-end first, then the Back-end and then add the database.
+
+# User Requirements: #
+Our Camping Site will include the following features to meet the users needs:
+
+    The homepage.
+    Register system.
+    Users will have the chance to surf the page without signing in.
+    The edit feature for the camp
+    Comment feature
+    Delete option for the users
+    A description for every camp added in the site.
