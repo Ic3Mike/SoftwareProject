@@ -24,7 +24,7 @@ router.post("/password_reset", (req, res, next) => {
       User.findOne({ email: req.body.email }, (err, user) => {
         if (err) throw err;
         if (!user) {
-          req.flash("error", "Kjo llogari OffRoad nuk ekziston.");
+          req.flash("error", "Kjo llogari CampAl nuk ekziston.");
           return res.redirect("/password_reset");
         }
         
@@ -39,19 +39,19 @@ router.post("/password_reset", (req, res, next) => {
       let smtpTransport = nodemailer.createTransport({
         service: "Gmail",
         auth: {
-          user: "gerindt@gmail.com",
+          user: "mike.bllako@hotmail.com",
           pass: process.env.PASSWORD
         }
       });
       let mailOptions = {
-        from: "gerindt@gmail.com",
+        from: "mike.bllako@hotmail.com",
         to: user.email,
-        subject: "Reset your OffRoad Password",
+        subject: "Reset your CampAl Password",
         text: "Pershendetje " + user.firstName + ",\n\n" +
               "Ne kemi marrë një kërkesë për të rivendosur fjalëkalimin tuaj. Nëse nuk e keni bërë kërkesën, thjesht injoroni këtë email. Përndryshe, mund ta rivendosni fjalëkalimin tuaj duke përdorur këtë link:\n\n" +
               "https://" + req.headers.host + "/reset/" + token + "\n\n" +
               "Faleminderit.\n"+
-              "Skuadra e OffRoad\n"
+              "Skuadra e CampAl\n"
       };
       // send the email
       smtpTransport.sendMail(mailOptions, err => {
@@ -113,18 +113,18 @@ router.post("/reset/:token", (req, res) => {
       let smtpTransport = nodemailer.createTransport({
         service: "Gmail",
         auth: {
-          user: "gerindt@gmail.com",
+          user: "mike.bllako@hotmail.com",
           pass: process.env.PASSWORD
         }
       });
       let mailOptions = {
-        from: "gerindt@gmail.com",
+        from: "mike.bllako@hotmail.com",
         to: user.email,
-        subject: "Fjalëkalimi juaj OffRoad është ndryshuar",
+        subject: "Fjalëkalimi juaj CampAl është ndryshuar",
         text: "Pershendetje " + user.firstName + ",\n\n" +
               "Ky është një konfirmim që fjalëkalimi për llogarinë tuaj "+ user.email +" sapo është ndryshuar.\n\n" +
               "Më te mirat,\n"+
-              "Skuadra e OffRoad\n"
+              "Skuadra e CampAl\n"
       };
       smtpTransport.sendMail(mailOptions, err => {
         if (err) throw err;

@@ -35,7 +35,7 @@ router.post("/register", (req, res) => {
     }
     
     passport.authenticate("local")(req, res, () => {
-      req.flash("success", "Mirësevini në OffRoad " + user.username);
+      req.flash("success", "Mirësevini në CampAl " + user.username);
       res.redirect("/campgrounds");
     });
   });
