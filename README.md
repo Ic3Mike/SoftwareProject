@@ -1,12 +1,6 @@
 # CEN302 - Software Engineering #
 # Project Title:  *Camp AL*
 
-# Team Members: #
-Majk Bllako
-
-# Team Leader: #
-Majk Bllako
-
 # Identifying Problem: #
 Albania has the best geographical location and by making some researches we saw that Albania lacks a proper site for campgrounds. A proper camping site has to be part of this beautiful country and would help a lot of tourists and its people for visiting and watching better places in the nature. It would make it easier and draw more attention which may also result in helping the economy through tourism.
 
