@@ -3,8 +3,6 @@
 
 # Team Members: #
 Majk Bllako
-<br>
-Fabio Allmeta 
 
 # Team Leader: #
 Majk Bllako
